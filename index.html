@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanji Writer</title>
+  <script src="https://unpkg.com/hanzi-writer@2.2.2/dist/hanziwriter.min.js"></script>
+</head>
+<body>
+
+  <h2>Kanji: 盗</h2>
+  <div id="draw" style="width:200px;height:200px;"></div>
+
+  <script>
+    const writer = HanziWriter.create('draw', '盗', {
+      width: 200,
+      height: 200,
+      showOutline: true,
+      showCharacter: false
+    });
+    writer.animateCharacter();
+  </script>
+
+</body>
+</html>
